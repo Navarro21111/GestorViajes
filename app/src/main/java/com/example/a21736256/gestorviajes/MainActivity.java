@@ -10,6 +10,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.a21736256.gestorviajes.javabean.Viaje;
 import com.example.a21736256.gestorviajes.javabean.ViajeAdaptador;
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView rvViajes;
     LinearLayoutManager llLayout;
 
+    private ViajeAdaptador miAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +53,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         addChildEvenListener();
+
+        miAdapter = new ViajeAdaptador(datos);
+        miAdapter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 
     private void addChildEvenListener() {

@@ -16,28 +16,24 @@
         android:id="@+id/tvNombreCiudad"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/tvNombrePais"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/tvNumDias"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:text="TextView" />
 
     <TextView
         android:id="@+id/tvPrecio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+        android:text="TextView" />
 
 </LinearLayout>

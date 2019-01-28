@@ -11,13 +11,22 @@ import com.example.a21736256.gestorviajes.R;
 
 import java.util.ArrayList;
 
-    public class ViajeAdaptador extends RecyclerView.Adapter<ViajeAdaptador.ViajeViewFolder> {
+    public class ViajeAdaptador extends RecyclerView.Adapter<ViajeAdaptador.ViajeViewFolder>
+    implements View.OnClickListener{
 
     private ArrayList<Viaje> lista;
+    private View.OnClickListener listener;
 
     public ViajeAdaptador(ArrayList<Viaje> lista) {
         this.lista = lista;
     }
+
+        @Override
+        public void onClick(View v) {
+            if (listener != null) {
+                listener.onClick(v);
+            }
+        }
 
         public class ViajeViewFolder extends RecyclerView.ViewHolder {
             TextView tvNombre;
@@ -48,7 +57,9 @@ import java.util.ArrayList;
     @Override
     public ViajeViewFolder onCreateViewHolder(@NonNull ViewGroup parent, int i) {
         View v=LayoutInflater.from(parent.getContext()).inflate(R.layout.rv_viaje , parent, false);
+        v.setOnClickListener(this);
         ViajeViewFolder vh=new ViajeViewFolder(v);
+
         return vh;
     }
 
@@ -67,6 +78,11 @@ import java.util.ArrayList;
     public void clear(){
         lista.clear();
     }
+
+        public void setOnClickListener(View.OnClickListener listener) {
+            this.listener = listener;
+        }
+
 
 
 }

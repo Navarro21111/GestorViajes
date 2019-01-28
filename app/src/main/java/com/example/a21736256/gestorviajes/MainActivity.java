@@ -42,6 +42,13 @@ public class MainActivity extends AppCompatActivity {
 
         datos = new ArrayList<Viaje>();
         adapter= new ViajeAdaptador(datos);
+        adapter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, Anadir.class);
+                startActivity(i);
+            }
+        });
         rvViajes=findViewById(R.id.rvViajes);
 
         llLayout= new LinearLayoutManager(this);
@@ -54,13 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
         addChildEvenListener();
 
-        miAdapter = new ViajeAdaptador(datos);
-        miAdapter.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
     }
 
     private void addChildEvenListener() {

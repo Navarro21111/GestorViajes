@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GestorViajes</string>
+    <string name="btn_añadir">Añadir</string>
+    <string name="btn_modificar">Modificar </string>
+    <string name="btn_borrar">Borrar</string>
+    <string name="et_Nombre">Nombre</string>
+    <string name="et_ciudad">Ciudad</string>
+    <string name="et_pais">Pais</string>
+    <string name="et_dias">Numero de Dias</string>
+    <string name="et_precio">Precio</string>
+</resources>

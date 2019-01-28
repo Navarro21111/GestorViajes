@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1069915177613",
+    "firebase_url": "https://fir-agencia.firebaseio.com",
+    "project_id": "fir-agencia",
+    "storage_bucket": "fir-agencia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1069915177613:android:c2ac2dfd04866412",
+        "android_client_info": {
+          "package_name": "com.example.a21736256.gestorviajes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1069915177613-238df8sqvf3tgftphcqr8ce0cq280p5a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuAOniImr3oZ0kszF4TalZVP4ocG7O7YI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
